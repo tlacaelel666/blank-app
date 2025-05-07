@@ -5,16 +5,16 @@ from qiskit import QuantumCircuit, Aer, execute
 from scipy.constants import hbar, G, c
 
 class QuantumWormholeModel:
-    def __init__(self, majorana_mass=1e-22, dark_energy=-1e18, 
-                 wormhole_distance=1e6, teleport_time=1e-9):
+    def __init__(self, majorana_mass=2.5e-25, dark_energy=-1.2e-10, 
+                 wormhole_distance=1.6e-35, teleport_time=5.4e-44):
         """
         Inicializar el modelo de teletransportación a través de agujeros de gusano cuánticos
         
         Parámetros:
-        - majorana_mass: Masa del fermión de Majorana (kg)
-        - dark_energy: Energía negativa de la materia oscura (J)
-        - wormhole_distance: Distancia del agujero de gusano (m)
-        - teleport_time: Tiempo de teletransportación (s)
+        - majorana_mass: Masa del fermión de Majorana (kg) - escala de neutrino
+        - dark_energy: Energía negativa de la materia oscura (J) - basada en densidad de energía oscura
+        - wormhole_distance: Distancia del agujero de gusano (m) - escala de longitud de Planck
+        - teleport_time: Tiempo de teletransportación (s) - escala de tiempo de Planck
         """
         self.m = majorana_mass
         self.E = dark_energy
@@ -190,12 +190,12 @@ class QuantumWormholeModel:
 
 # Ejemplo de uso del modelo
 def run_wormhole_teleportation_simulation():
-    # Crear instancia del modelo con los parámetros especificados
+    # Crear instancia del modelo con los parámetros físicamente realistas
     model = QuantumWormholeModel(
-        majorana_mass=1e-22,  # kg
-        dark_energy=-1e18,    # J
-        wormhole_distance=1e6, # m
-        teleport_time=1e-9     # s
+        majorana_mass=2.5e-25,  # kg (escala de masa del neutrino)
+        dark_energy=-1.2e-10,   # J (basada en densidad de energía oscura)
+        wormhole_distance=1.6e-35, # m (longitud de Planck)
+        teleport_time=5.4e-44     # s (tiempo de Planck)
     )
     
     # Ejecutar la simulación
