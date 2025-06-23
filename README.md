@@ -1,19 +1,14 @@
-# 🎈 Blank app template
+# Run and deploy your AI Studio app
 
-A simple Streamlit app template for you to modify!
+This contains everything you need to run your app locally.
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://blank-app-template.streamlit.app/)
+## Run Locally
 
-### How to run it on your own machine
+**Prerequisites:**  Node.js
 
-1. Install the requirements
 
-   ```
-   $ pip install -r requirements.txt
-   ```
-
-2. Run the app
-
-   ```
-   $ streamlit run streamlit_app.py
-   ```
+1. Install dependencies:
+   `npm install`
+2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
+3. Run the app:
+   `npm run dev`

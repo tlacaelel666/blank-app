@@ -1,0 +1,6 @@
+{
+  "name": "AI Code Transpiler",
+  "description": "An intelligent code transpilation tool powered by Gemini, designed to translate code between programming languages while understanding context and preserving functionality.",
+  "requestFramePermissions": [],
+  "prompt": ""
+}
